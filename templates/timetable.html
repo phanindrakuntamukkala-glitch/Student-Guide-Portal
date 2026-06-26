@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Weekly Timetable</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard-card">
+
+    <h1>📅 Weekly Timetable</h1>
+
+    <table class="timetable">
+
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+
+        <tr>
+            <td>09:00-10:00</td>
+            <td>Data Structures</td>
+            <td>DBMS</td>
+            <td>Operating Systems</td>
+            <td>Computer Networks</td>
+            <td>Artificial Intelligence</td>
+        </tr>
+
+        <tr>
+            <td>10:00-11:00</td>
+            <td>DBMS</td>
+            <td>Operating Systems</td>
+            <td>Software Engineering</td>
+            <td>AI</td>
+            <td>DBMS Lab</td>
+        </tr>
+
+        <tr>
+            <td>11:00-12:00</td>
+            <td>Computer Networks</td>
+            <td>AI</td>
+            <td>DBMS</td>
+            <td>Operating Systems</td>
+            <td>Project Work</td>
+        </tr>
+
+        <tr>
+            <td>12:00-01:00</td>
+            <td colspan="5">🍴 Lunch Break</td>
+        </tr>
+
+        <tr>
+            <td>01:00-02:00</td>
+            <td>AI Lab</td>
+            <td>Software Engineering</td>
+            <td>Computer Networks</td>
+            <td>Mini Project</td>
+            <td>Library</td>
+        </tr>
+
+        <tr>
+            <td>02:00-03:00</td>
+            <td>Mini Project</td>
+            <td>AI Lab</td>
+            <td>Placement Training</td>
+            <td>DBMS Lab</td>
+            <td>Sports</td>
+        </tr>
+
+        <tr>
+            <td>03:00-04:00</td>
+            <td>Placement</td>
+            <td>Library</td>
+            <td>Project</td>
+            <td>Seminar</td>
+            <td>Club Activity</td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <a href="/dashboard" class="search-btn">⬅ Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+  <!-- LEFT PROFILE -->
+<div class="profile-card">
+
+    <!-- Blue Header -->
+    <div class="profile-header">
+
+        <img src="{{ url_for('static', filename='images/phani.jpg') }}" class="profile-img">
+
+        <h3>KUNTAMUKKALA PHANINDRA CHOWDARY</h3>
+
+        <h5>Artificial Intelligence & Machine Learning</h5>
+
+        <div class="contact">
+            <p>📧 phanindrakuntamala@gmail.com</p>
+            <p>📞 7569462957</p>
+        </div>
+
+    </div>
+
+    <!-- Student Details -->
+    <table class="profile-table">
+
+        <tr>
+            <td><strong>Father Name</strong></td>
+            <td>Kuntamukkala Srinivasa Rao</td>
+        </tr>
+
+        <tr>
+            <td><strong>Mother Name</strong></td>
+            <td>Kuntamukkala Narmada</td>
+        </tr>
+
+        <tr>
+            <td><strong>Date of Birth</strong></td>
+            <td>29/10/2005</td>
+        </tr>
+
+        <tr>
+            <td><strong>Course</strong></td>
+            <td>B.Tech</td>
+        </tr>
+
+        <tr>
+            <td><strong>Department</strong></td>
+            <td>Artificial Intelligence & Machine Learning</td>
+        </tr>
+
+        <tr>
+            <td><strong>Branch</strong></td>
+            <td>Computer Science & Engineering</td>
+        </tr>
+
+        <tr>
+            <td><strong>Section</strong></td>
+            <td>CSE-VII</td>
+        </tr>
+
+        <tr>
+            <td><strong>Roll No</strong></td>
+            <td>74</td>
+        </tr>
+
+        <tr>
+            <td><strong>Semester</strong></td>
+            <td>6</td>
+        </tr>
+
+        <tr>
+            <td><strong>University Roll No</strong></td>
+            <td>2301010386</td>
+        </tr>
+
+        <tr>
+            <td><strong>CGPA</strong></td>
+            <td>8.75</td>
+        </tr>
+
+    </table>
+
+</div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="main-content">
+
+        <!-- Search -->
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                class="search-box"
+                placeholder="Search modules, timetable, assignments...">
+
+            <button class="search-btn">
+                Search
+            </button>
+
+        </div>
+
+        <!-- Cards -->
+<div class="top-cards">
+
+    <!-- Attendance -->
+    <div class="info-card" onclick="window.location.href='/attendance'">
+        <div class="card-icon">📊</div>
+        <h3>Attendance</h3>
+        <div class="circle">
+            <span>92%</span>
+        </div>
+        <p>View Subject-wise Attendance</p>
+    </div>
+
+    <!-- CGPA -->
+    <div class="info-card" onclick="window.location.href='/cgpa'">
+        <div class="card-icon">📈</div>
+        <h3>CGPA</h3>
+        <h1>8.75</h1>
+        <p>View Academic Performance</p>
+    </div>
+
+    <!-- Backlogs -->
+    <div class="info-card">
+        <div class="card-icon">📚</div>
+        <h3>Backlogs</h3>
+        <h1>0</h1>
+        <p>No Backlogs</p>
+    </div>
+
+    <!-- Credits -->
+    <div class="info-card">
+        <div class="card-icon">🎓</div>
+        <h3>Credits</h3>
+        <h1>132</h1>
+        <p>Completed</p>
+    </div>
+
+    <!-- Timetable -->
+    <div class="info-card" onclick="window.location.href='/timetable'">
+        <div class="card-icon">📅</div>
+        <h3>Timetable</h3>
+        <p>Weekly Schedule</p>
+    </div>
+
+    <!-- Assignments -->
+    <div class="info-card" onclick="window.location.href='/assignments'">
+        <div class="card-icon">📝</div>
+        <h3>Assignments</h3>
+        <p>View Assignments</p>
+    </div>
+
+    <!-- Fee Details -->
+    <div class="info-card" onclick="window.location.href='/fees'">
+        <div class="card-icon">💰</div>
+        <h3>Fee Details</h3>
+        <p>View Fee Status</p>
+    </div>
+
+    <!-- Study Materials -->
+    <div class="info-card" onclick="window.location.href='/study-materials'">
+        <div class="card-icon">📚</div>
+        <h3>Study Materials</h3>
+        <p>Notes & PDFs</p>
+    </div>
+
+    <!-- Results -->
+    <div class="info-card" onclick="window.location.href='/results'">
+        <div class="card-icon">📈</div>
+        <h3>Results</h3>
+        <p>Semester Results</p>
+    </div>
+
+    <!-- Circular Notices -->
+    <div class="info-card" onclick="window.location.href='/circulars'">
+        <div class="card-icon">📢</div>
+        <h3>Circulars</h3>
+        <p>Latest Notices</p>
+    </div>
+
+    <!-- Exam Apply -->
+    <div class="info-card" onclick="window.location.href='/exam-apply'">
+        <div class="card-icon">📝</div>
+        <h3>Exam Apply</h3>
+        <p>Apply for Exams</p>
+    </div>
+
+</div>
+  <!-- Admit Card -->
+<div class="info-card" onclick="window.location.href='/admit-card'">
+    <div class="card-icon">🎫</div>
+    <h3>Admit Card</h3>
+    <p>Download Hall Ticket</p>
+</div>
+
+<!-- Library -->
+<div class="info-card" onclick="window.location.href='/library'">
+    <div class="card-icon">📖</div>
+    <h3>Library</h3>
+    <p>View Borrowed Books</p>
+</div>
+
+<!-- AI Assistant -->
+<div class="info-card" onclick="window.location.href='/ai-assistant'">
+    <div class="card-icon">🤖</div>
+    <h3>AI Study Assistant</h3>
+    <p>Ask Questions & Learn</p>
+</div>
+
+<!-- Academic Calendar -->
+<div class="info-card" onclick="window.location.href='/academic-calendar'">
+    <div class="card-icon">📅</div>
+    <h3>Academic Calendar</h3>
+    <p>View Important Dates</p>
+</div>
+
+<!-- Settings -->
+<div class="info-card" onclick="window.location.href='/settings'">
+    <div class="card-icon">⚙️</div>
+    <h3>Settings</h3>
+    <p>Profile & Account Settings</p>
+</div>
+</div> <!-- ✅ Close top-cards here -->

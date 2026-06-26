@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Exam Application</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard-card">
+
+<h1>📝 Semester Examination Application</h1>
+
+<form>
+
+<table class="exam-table">
+
+<tr>
+<td><strong>Student Name</strong></td>
+<td>KUNTAMUKKALA PHANINDRA CHOWDARY</td>
+</tr>
+
+<tr>
+<td><strong>Roll Number</strong></td>
+<td>2301010386</td>
+</tr>
+
+<tr>
+<td><strong>Course</strong></td>
+<td>B.Tech (AI & ML)</td>
+</tr>
+
+<tr>
+<td><strong>Semester</strong></td>
+<td>6th Semester</td>
+</tr>
+
+<tr>
+<td><strong>Exam Type</strong></td>
+<td>
+
+<select>
+
+<option>Regular</option>
+
+<option>Supplementary</option>
+
+</select>
+
+</td>
+</tr>
+
+</table>
+
+<h2>Select Subjects</h2>
+
+<label>
+<input type="checkbox" checked>
+Artificial Intelligence
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" checked>
+Database Management System
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" checked>
+Operating Systems
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" checked>
+Computer Networks
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" checked>
+Software Engineering
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" checked>
+Machine Learning Lab
+</label>
+
+<br><br>
+
+<button class="apply-btn">
+Submit Application
+</button>
+
+</form>
+
+<br>
+
+<a href="/dashboard" class="search-btn">
+⬅ Back to Dashboard
+</a>
+
+</div>
+
+</body>
+
+</html>

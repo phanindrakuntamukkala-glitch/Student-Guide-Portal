@@ -1,0 +1,1239 @@
+.profile-card{
+    width:350px;
+    background:#0d6efd;
+    color:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.profile-img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    display:block;
+    margin:20px auto;
+}
+
+.profile-card h3{
+    text-align:center;
+    font-size:22px;
+    margin-bottom:5px;
+}
+
+.profile-card h5{
+    text-align:center;
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.contact{
+    text-align:center;
+    padding-bottom:20px;
+    border-bottom:1px  black(255,255,255,.3);
+}
+
+.contact p{
+    margin:8px 0;
+}
+
+.profile-table{
+    width:100%;
+    background:white;
+    color:#333;
+    border-collapse:collapse;
+}
+
+.profile-table td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    font-size:14px;
+}
+
+.profile-table td:first-child{
+    width:40%;
+    font-weight:bold;
+    background:#f8f9fa;
+}
+/* ================= DASHBOARD LAYOUT ================= */
+
+.dashboard-container{
+    display:flex;
+    gap:25px;
+    padding:25px;
+    background:#f4f7fb;
+    align-items:flex-start;
+}
+
+.main-content{
+    flex:1;
+}
+
+/* ================= TOP CARDS ================= */
+
+.top-cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+/* ================= INFO CARD ================= */
+
+.info-card{
+    background:#fff;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    text-align:center;
+    transition:.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-5px);
+}
+
+.info-card h3{
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+/* ================= ATTENDANCE CIRCLE ================= */
+
+.circle{
+    width:120px;
+    height:120px;
+    margin:auto;
+    border-radius:50%;
+    background:conic-gradient(#16a34a 92%, #e5e7eb 0);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.circle span{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    font-weight:bold;
+    color:#16a34a;
+}
+
+.info-card h1{
+    color:#2563eb;
+    margin:20px 0 10px;
+}
+
+.info-card p{
+    color:#666;
+}
+/* ================= SEARCH BAR ================= */
+
+.search-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    background:white;
+    padding:15px 20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    margin-bottom:25px;
+}
+
+.search-box{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:14px 18px;
+    border-radius:10px;
+    background:#f5f7fb;
+    font-size:16px;
+}
+
+.search-box:focus{
+    border:2px solid #2563eb;
+    background:white;
+}
+
+.search-btn{
+    border:none;
+    background:#2563eb;
+    color:white;
+    padding:14px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.search-btn:hover{
+    background:#1d4ed8;
+}
+/* Assignment Card */
+
+.assignment-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.assignment-table th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px;
+
+}
+
+.assignment-table td{
+
+    border:1px solid #ddd;
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+.assignment-table tr:nth-child(even){
+
+    background:#f8f9fa;
+
+}
+
+.pending{
+
+    background:#ef4444;
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+
+.submitted{
+
+    background:#22c55e;
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+/* Dashboard Card */
+
+.dashboard-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    margin-top:30px;
+
+    padding:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+/* Card Title */
+
+.card-title{
+
+    margin-bottom:20px;
+
+}
+
+.card-title h2{
+
+    color:#1e3a8a;
+
+}
+
+/* Timetable */
+
+.timetable{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.timetable th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:14px;
+
+}
+
+.timetable td{
+
+    border:1px solid #ddd;
+
+    padding:12px;
+
+    text-align:center;
+
+}
+
+.timetable tr:nth-child(even){
+
+    background:#f8f9fa;
+
+}
+
+.timetable tr:hover{
+
+    background:#edf4ff;
+
+}
+
+.lunch td{
+
+    background:#fff3cd;
+
+    font-weight:bold;
+
+}
+.fee-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.fee-table th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px;
+
+}
+
+.fee-table td{
+
+    border:1px solid #ddd;
+
+    padding:14px;
+
+    text-align:center;
+
+}
+
+.fee-table tr:nth-child(even){
+
+    background:#f9fafb;
+
+}
+
+.paid{
+
+    background:#22c55e;
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+}
+
+.pending{
+
+    background:#ef4444;
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+}
+
+.materials-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.materials-table th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px;
+
+}
+
+.materials-table td{
+
+    border:1px solid #ddd;
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+.materials-table tr:nth-child(even){
+
+    background:#f8f9fa;
+
+}
+
+.materials-table a{
+
+    text-decoration:none;
+
+    color:#2563eb;
+
+    font-weight:bold;
+
+}
+
+.materials-table a:hover{
+
+    color:#0d47a1;
+
+}
+.results-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.results-table th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px;
+
+}
+
+.results-table td{
+
+    border:1px solid #ddd;
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+.results-table tr:nth-child(even){
+
+    background:#f8f9fa;
+
+}
+
+.pass{
+
+    background:#22c55e;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+
+.fail{
+
+    background:#ef4444;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+}
+
+.summary-box{
+
+    margin-top:30px;
+
+    background:#f5f7fb;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    border-left:5px solid #2563eb;
+
+}
+
+.summary-box h2{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.attendance-table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:20px;
+
+}
+
+.attendance-table th{
+
+background:#2563eb;
+
+color:white;
+
+padding:15px;
+
+}
+
+.attendance-table td{
+
+padding:15px;
+
+border:1px solid #ddd;
+
+text-align:center;
+
+}
+
+.attendance-table tr:nth-child(even){
+
+background:#f8f9fa;
+
+}
+
+.excellent{
+
+background:#22c55e;
+
+color:white;
+
+padding:6px 14px;
+
+border-radius:20px;
+
+font-weight:bold;
+
+}
+
+.good{
+
+background:#3b82f6;
+
+color:white;
+
+padding:6px 14px;
+
+border-radius:20px;
+
+font-weight:bold;
+
+}
+
+.low{
+
+background:#ef4444;
+
+color:white;
+
+padding:6px 14px;
+
+border-radius:20px;
+
+font-weight:bold;
+
+}
+.cgpa-table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:20px;
+
+}
+
+.cgpa-table th{
+
+background:#2563eb;
+
+color:white;
+
+padding:15px;
+
+}
+
+.cgpa-table td{
+
+padding:15px;
+
+border:1px solid #ddd;
+
+text-align:center;
+
+}
+
+.cgpa-table tr:nth-child(even){
+
+background:#f8f9fa;
+
+}
+
+.pass{
+
+background:#22c55e;
+
+color:white;
+
+padding:6px 14px;
+
+border-radius:20px;
+
+font-weight:bold;
+
+}
+.exam-table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-bottom:30px;
+
+}
+
+.exam-table td{
+
+border:1px solid #ddd;
+
+padding:15px;
+
+}
+
+.exam-table td:first-child{
+
+background:#f8f9fa;
+
+font-weight:bold;
+
+width:220px;
+
+}
+
+.apply-btn{
+
+background:#2563eb;
+
+color:white;
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:8px;
+
+font-size:16px;
+
+cursor:pointer;
+
+margin-top:20px;
+
+}
+
+.apply-btn:hover{
+
+background:#1d4ed8;
+
+}
+
+.admit-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+.college-header{
+
+    text-align:center;
+
+}
+
+.admit-table,
+.subject-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.admit-table td,
+.subject-table td,
+.subject-table th{
+
+    border:1px solid #ddd;
+
+    padding:12px;
+
+}
+
+.subject-table th{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.library-table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:20px;
+
+}
+
+.library-table th{
+
+background:#2563eb;
+
+color:white;
+
+padding:15px;
+
+}
+
+.library-table td{
+
+border:1px solid #ddd;
+
+padding:15px;
+
+text-align:center;
+
+}
+
+.library-table tr:nth-child(even){
+
+background:#f8f9fa;
+
+}
+
+.issued{
+
+background:#3b82f6;
+
+color:white;
+
+padding:6px 12px;
+
+border-radius:20px;
+
+font-weight:bold;
+
+}
+
+.returned{
+
+background:#22c55e;
+
+color:white;
+
+padding:6px 12px;
+
+border-radius:20px;
+
+font-weight:bold;
+
+}
+
+.overdue{
+
+background:#ef4444;
+
+color:white;
+
+padding:6px 12px;
+
+border-radius:20px;
+
+font-weight:bold;
+
+}
+
+textarea{
+
+width:100%;
+
+padding:15px;
+
+border-radius:10px;
+
+border:1px solid #ddd;
+
+font-size:16px;
+
+}
+
+.ai-answer{
+
+margin-top:30px;
+
+padding:20px;
+
+background:#eef4ff;
+
+border-left:5px solid #2563eb;
+
+border-radius:10px;
+
+}
+
+.ai-answer h2{
+
+color:#2563eb;
+
+margin-bottom:10px;
+
+}
+.calendar-table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+
+}
+
+.calendar-table th{
+
+    background:#2563eb;
+    color:white;
+    padding:15px;
+
+}
+
+.calendar-table td{
+
+    border:1px solid #ddd;
+    padding:15px;
+    text-align:center;
+
+}
+
+.calendar-table tr:nth-child(even){
+
+    background:#f8f9fa;
+
+}
+
+.upcoming{
+
+    background:#3b82f6;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-weight:bold;
+
+}
+
+.exam{
+
+    background:#ef4444;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-weight:bold;
+
+}
+
+.holiday{
+
+    background:#22c55e;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-weight:bold;
+
+}
+
+.important{
+
+    background:#f59e0b;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-weight:bold;
+
+}
+.settings-table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+
+}
+
+.settings-table td{
+
+    border:1px solid #ddd;
+    padding:15px;
+
+}
+
+.settings-table td:first-child{
+
+    background:#f8f9fa;
+    font-weight:bold;
+    width:250px;
+
+}
+
+.settings-table input,
+.settings-table select{
+
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+
+}
+
+.settings-table input[type="checkbox"]{
+
+    width:auto;
+
+}
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f7fb;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    background:#0f172a;
+}
+
+.logo{
+    color:#fff;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("/static/images/university.jpg") center/cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+.btn{
+    background:#2563eb;
+    color:white;
+    padding:15px 35px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:20px;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.welcome,
+.contact{
+    padding:70px;
+    text-align:center;
+}
+
+.contact-box{
+    background:white;
+    width:500px;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.contact-box p{
+    font-size:18px;
+    margin:15px 0;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+/* Hero Background */
+
+.hero{
+    height:100vh;
+    background-image:url("../images/university.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+/* Dark Overlay */
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.55);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+/* Title */
+
+.overlay h1{
+    font-size:70px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+/* Subtitle */
+
+.overlay p{
+    font-size:28px;
+    margin-bottom:40px;
+}
+
+/* Login Button */
+
+.btn{
+    background:#2563eb;
+    color:white;
+    padding:18px 45px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:22px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-4px);
+}
+
+/* Welcome Section */
+
+.welcome{
+    padding:80px;
+    text-align:center;
+    background:#f8fafc;
+}
+
+.welcome h2{
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+/* Contact */
+
+.contact{
+    padding:80px;
+    background:white;
+}
+
+.contact-box{
+    max-width:600px;
+    margin:auto;
+    background:#f8fafc;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.contact-box p{
+    font-size:18px;
+    margin:15px 0;
+}
+
+/* Footer */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.contact{
+    color:black;
+    text-align:center;
+    margin:20px 0;
+}
+
+.contact p{
+    color:black4, 2, 2);
+    font-size:17px;
+    margin:10px 0;
+}
+/* Profile Header */
+
+.profile-header{
+    background:#1f6ef2;
+    text-align:center;
+    padding:25px;
+}
+
+/* Profile Image */
+
+.profile-img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:5px solid white;
+    margin-bottom:15px;
+}
+
+/* Name */
+
+.profile-header h3{
+    color:black;
+    font-size:24px;
+    margin:10px 0;
+}
+
+/* Course */
+
+.profile-header h5{
+    color:black;
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+/* Contact */
+
+.profile-header .contact{
+    padding:0;
+    margin-top:15px;
+    background:transparent;
+}
+
+.profile-header .contact p{
+    color:black;
+    font-size:16px;
+    margin:8px 0;
+}
+
+/* Profile Table */
+
+.profile-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+.profile-table td{
+    color:black;
+    padding:12px;
+    border:1px solid #ddd;
+}
+
+.profile-table td:first-child{
+    font-weight:bold;
+    background:#f8f9fa;
+}

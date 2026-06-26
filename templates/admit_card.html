@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admit Card</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard-card">
+
+<h1>🎫 Semester Examination Hall Ticket</h1>
+
+<div class="admit-card">
+
+    <div class="college-header">
+
+        <h2>ABC Institute of Technology</h2>
+
+        <p>Department of Artificial Intelligence & Machine Learning</p>
+
+        <h3>Semester Examination Hall Ticket</h3>
+
+    </div>
+
+    <hr>
+
+    <table class="admit-table">
+
+        <tr>
+            <td><strong>Student Name</strong></td>
+            <td>KUNTAMUKKALA PHANINDRA CHOWDARY</td>
+        </tr>
+
+        <tr>
+            <td><strong>Father Name</strong></td>
+            <td>Kuntamukkala Srinivasa Rao</td>
+        </tr>
+
+        <tr>
+            <td><strong>Roll Number</strong></td>
+            <td>2301010386</td>
+        </tr>
+
+        <tr>
+            <td><strong>Course</strong></td>
+            <td>B.Tech (AI & ML)</td>
+        </tr>
+
+        <tr>
+            <td><strong>Semester</strong></td>
+            <td>VI Semester</td>
+        </tr>
+
+        <tr>
+            <td><strong>Exam Centre</strong></td>
+            <td>Main Campus Block-A</td>
+        </tr>
+
+        <tr>
+            <td><strong>Exam Date</strong></td>
+            <td>15 July 2026</td>
+        </tr>
+
+    </table>
+
+    <h2>Registered Subjects</h2>
+
+    <table class="subject-table">
+
+        <tr>
+            <th>Code</th>
+            <th>Subject</th>
+        </tr>
+
+        <tr>
+            <td>AI601</td>
+            <td>Artificial Intelligence</td>
+        </tr>
+
+        <tr>
+            <td>CS602</td>
+            <td>Database Management System</td>
+        </tr>
+
+        <tr>
+            <td>CS603</td>
+            <td>Operating Systems</td>
+        </tr>
+
+        <tr>
+            <td>CS604</td>
+            <td>Computer Networks</td>
+        </tr>
+
+        <tr>
+            <td>AI605</td>
+            <td>Machine Learning</td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <button onclick="window.print()" class="apply-btn">
+        🖨 Print Admit Card
+    </button>
+
+    <br><br>
+
+    <a href="/dashboard" class="search-btn">
+        ⬅ Back to Dashboard
+    </a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

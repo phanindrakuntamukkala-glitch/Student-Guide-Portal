@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Attendance Details</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard-card">
+
+<h1>📊 Subject-wise Attendance</h1>
+
+<table class="attendance-table">
+
+<tr>
+<th>Subject</th>
+<th>Classes Held</th>
+<th>Classes Attended</th>
+<th>Attendance %</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Artificial Intelligence</td>
+<td>42</td>
+<td>40</td>
+<td>95%</td>
+<td><span class="excellent">Excellent</span></td>
+</tr>
+
+<tr>
+<td>Database Management System</td>
+<td>40</td>
+<td>38</td>
+<td>95%</td>
+<td><span class="excellent">Excellent</span></td>
+</tr>
+
+<tr>
+<td>Operating Systems</td>
+<td>38</td>
+<td>35</td>
+<td>92%</td>
+<td><span class="good">Good</span></td>
+</tr>
+
+<tr>
+<td>Computer Networks</td>
+<td>36</td>
+<td>34</td>
+<td>94%</td>
+<td><span class="good">Good</span></td>
+</tr>
+
+<tr>
+<td>Software Engineering</td>
+<td>34</td>
+<td>31</td>
+<td>91%</td>
+<td><span class="good">Good</span></td>
+</tr>
+
+<tr>
+<td>Machine Learning Lab</td>
+<td>20</td>
+<td>20</td>
+<td>100%</td>
+<td><span class="excellent">Excellent</span></td>
+</tr>
+
+<tr>
+<td>DBMS Lab</td>
+<td>18</td>
+<td>17</td>
+<td>94%</td>
+<td><span class="good">Good</span></td>
+</tr>
+
+</table>
+
+<br>
+
+<div class="summary-box">
+
+<h2>Attendance Summary</h2>
+
+<p><strong>Overall Attendance :</strong> 92%</p>
+
+<p><strong>Total Classes :</strong> 228</p>
+
+<p><strong>Classes Attended :</strong> 215</p>
+
+<p><strong>Status :</strong> Eligible for Semester Examination</p>
+
+</div>
+
+<br>
+
+<a href="/dashboard" class="search-btn">
+⬅ Back to Dashboard
+</a>
+
+</div>
+
+</body>
+</html>

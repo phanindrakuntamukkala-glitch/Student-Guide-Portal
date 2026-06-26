@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Library</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard-card">
+
+<h1>📖 Library Management</h1>
+
+<table class="library-table">
+
+<tr>
+<th>Book ID</th>
+<th>Book Name</th>
+<th>Author</th>
+<th>Issue Date</th>
+<th>Due Date</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>LIB101</td>
+<td>Artificial Intelligence: A Modern Approach</td>
+<td>Stuart Russell</td>
+<td>01-Jun-2026</td>
+<td>01-Jul-2026</td>
+<td><span class="issued">Issued</span></td>
+</tr>
+
+<tr>
+<td>LIB102</td>
+<td>Database System Concepts</td>
+<td>Silberschatz</td>
+<td>05-Jun-2026</td>
+<td>05-Jul-2026</td>
+<td><span class="issued">Issued</span></td>
+</tr>
+
+<tr>
+<td>LIB103</td>
+<td>Operating System Concepts</td>
+<td>Galvin</td>
+<td>10-Jun-2026</td>
+<td>10-Jul-2026</td>
+<td><span class="returned">Returned</span></td>
+</tr>
+
+<tr>
+<td>LIB104</td>
+<td>Computer Networks</td>
+<td>Andrew S. Tanenbaum</td>
+<td>12-Jun-2026</td>
+<td>12-Jul-2026</td>
+<td><span class="issued">Issued</span></td>
+</tr>
+
+<tr>
+<td>LIB105</td>
+<td>Python Programming</td>
+<td>Mark Lutz</td>
+<td>15-Jun-2026</td>
+<td>15-Jul-2026</td>
+<td><span class="overdue">Overdue</span></td>
+</tr>
+
+</table>
+
+<br>
+
+<div class="summary-box">
+
+<h2>Library Summary</h2>
+
+<p><strong>Total Books Issued :</strong> 5</p>
+
+<p><strong>Books Returned :</strong> 1</p>
+
+<p><strong>Currently Borrowed :</strong> 4</p>
+
+<p><strong>Fine Amount :</strong> ₹100</p>
+
+</div>
+
+<br>
+
+<a href="/dashboard" class="search-btn">
+
+⬅ Back to Dashboard
+
+</a>
+
+</div>
+
+</body>
+
+</html>

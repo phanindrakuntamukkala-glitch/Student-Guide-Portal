@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Materials</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard-card">
+
+    <h1>📚 Study Materials</h1>
+
+    <table class="materials-table">
+
+        <tr>
+            <th>Subject</th>
+            <th>Material</th>
+            <th>Type</th>
+            <th>Download</th>
+        </tr>
+
+        <tr>
+            <td>Artificial Intelligence</td>
+            <td>AI Unit-1 Notes</td>
+            <td>PDF</td>
+            <td><a href="#">📥 Download</a></td>
+        </tr>
+
+        <tr>
+            <td>DBMS</td>
+            <td>SQL Notes</td>
+            <td>PDF</td>
+            <td><a href="#">📥 Download</a></td>
+        </tr>
+
+        <tr>
+            <td>Operating Systems</td>
+            <td>OS Lab Manual</td>
+            <td>PDF</td>
+            <td><a href="#">📥 Download</a></td>
+        </tr>
+
+        <tr>
+            <td>Computer Networks</td>
+            <td>Previous Question Papers</td>
+            <td>ZIP</td>
+            <td><a href="#">📥 Download</a></td>
+        </tr>
+
+        <tr>
+            <td>Software Engineering</td>
+            <td>Lecture Slides</td>
+            <td>PPT</td>
+            <td><a href="#">📥 Download</a></td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <a href="/dashboard" class="search-btn">⬅ Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>

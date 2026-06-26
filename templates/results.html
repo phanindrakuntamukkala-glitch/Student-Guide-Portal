@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Semester Results</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard-card">
+
+    <h1>📈 Semester Results</h1>
+
+    <table class="results-table">
+
+        <thead>
+
+            <tr>
+                <th>Subject</th>
+                <th>Internal</th>
+                <th>External</th>
+                <th>Total</th>
+                <th>Grade</th>
+                <th>Status</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Artificial Intelligence</td>
+                <td>28</td>
+                <td>62</td>
+                <td>90</td>
+                <td>O</td>
+                <td><span class="pass">Pass</span></td>
+            </tr>
+
+            <tr>
+                <td>DBMS</td>
+                <td>27</td>
+                <td>60</td>
+                <td>87</td>
+                <td>A+</td>
+                <td><span class="pass">Pass</span></td>
+            </tr>
+
+            <tr>
+                <td>Operating Systems</td>
+                <td>26</td>
+                <td>58</td>
+                <td>84</td>
+                <td>A</td>
+                <td><span class="pass">Pass</span></td>
+            </tr>
+
+            <tr>
+                <td>Computer Networks</td>
+                <td>29</td>
+                <td>61</td>
+                <td>90</td>
+                <td>O</td>
+                <td><span class="pass">Pass</span></td>
+            </tr>
+
+            <tr>
+                <td>Software Engineering</td>
+                <td>25</td>
+                <td>56</td>
+                <td>81</td>
+                <td>A</td>
+                <td><span class="pass">Pass</span></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <div class="summary-box">
+
+        <h2>Semester Summary</h2>
+
+        <p><strong>SGPA:</strong> 8.75</p>
+
+        <p><strong>CGPA:</strong> 8.75</p>
+
+        <p><strong>Credits Earned:</strong> 24 / 24</p>
+
+        <p><strong>Result:</strong> PASS</p>
+
+    </div>
+
+    <br>
+
+    <a href="/dashboard" class="search-btn">⬅ Back to Dashboard</a>
+
+</div>
+
+</body>
+
+</html>
