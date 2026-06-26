@@ -74,6 +74,7 @@ def academic_calendar():
 def settings():
     return render_template("settings.html")
 
+
 @app.route("/ai-assistant", methods=["GET", "POST"])
 def ai_assistant():
 
@@ -100,5 +101,11 @@ def ai_assistant():
 
     return render_template("ai_assistant.html", answer=answer)
 
+import os
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 5000)),
+        debug=True
+    )
