@@ -1,7 +1,121 @@
 from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
+students = {
 
+    "phani@gmail.com": {
+        "password": "1234",
+        "name": "KUNTAMUKKALA PHANINDRA CHOWDARY",
+        "father": "Kuntamukkala Srinivasa Rao",
+        "mother": "Kuntamukkala Narmada",
+        "dob": "29/10/2005",
+        "course": "B.Tech",
+        "department": "Artificial Intelligence & Machine Learning",
+        "branch": "Computer Science & Engineering",
+        "section": "CSE-VII",
+        "semester": "6",
+        "roll": "74",
+        "university_roll": "2301010386",
+        "email": "phani@gmail.com",
+        "phone": "7569462957",
+        "cgpa": "8.75",
+        "attendance": "92%",
+        "credits": "132",
+        "backlogs": "0",
+        "photo": "students/phani.jpg"
+    },
+
+    "madhu@gmail.com": {
+        "password": "1234",
+        "name": "MADHU SANGEETHA KOLETI",
+        "father": "Koleti Upendar Rao",
+        "mother": "Koleti Anitha",
+        "dob": "16/05/2005",
+        "course": "B.Tech",
+        "department": "Computer Science",
+        "branch": "Computer Science & Engineering",
+        "section": "CSE-VII",
+        "semester": "6",
+        "roll": "75",
+        "university_roll": "2301010387",
+        "email": "madhu@gmail.com",
+        "phone": "9573379009",
+        "cgpa": "8.20",
+        "attendance": "89%",
+        "credits": "130",
+        "backlogs": "0",
+        "photo": "students/madhu.jpg"
+    },
+
+    "himaja@gmail.com": {
+        "password": "1234",
+        "name": "KUNTAMUKKALA HIMAJASRI",
+        "father": "Kuntamukkala Srinivasarao",
+        "mother": "Kuntamukkala Narmada",
+        "dob": "18/06/2007",
+        "course": "B.Tech",
+        "department": "Information Technology",
+        "branch": "Information Technology",
+        "section": "IT-VI",
+        "semester": "6",
+        "roll": "76",
+        "university_roll": "2301010388",
+        "email": "himaja@gmail.com",
+        "phone": "7815850791",
+        "cgpa": "9.10",
+        "attendance": "95%",
+        "credits": "132",
+        "backlogs": "0",
+        "photo": "students/himaja.jpg"
+    },
+
+    "laharika@gmail.com": {
+        "password": "1234",
+        "name": "MEDHARAMETLA LAHARIKA",
+        "father": "Medharametla Nageswara Rao",
+        "mother": "Medharametla Padma",
+        "dob": "29/10/2005",
+        "course": "B.Tech",
+        "department": "Artificial Intelligence & Machine Learning",
+        "branch": "Computer Science & Engineering",
+        "section": "AIML-VI",
+        "semester": "6",
+        "roll": "77",
+        "university_roll": "2301010389",
+        "email": "laharika@gmail.com",
+        "phone": "9346028543",
+        "cgpa": "8.45",
+        "attendance": "91%",
+        "credits": "131",
+        "backlogs": "0",
+        "photo": "students/laharika.jpg"
+    },
+
+    "niharika@gmail.com": {
+        "password": "1234",
+        "name": "MEDHARAMETLA  NIHARIKA",
+        "father": "MEDHARAMETLA Nageswara Rao",
+        "mother": "MEDHARAMETLA Padma",
+        "dob": "18/01/2005",
+        "course": "B.Tech",
+        "department": "Electronics & Communication",
+        "branch": "ECE",
+        "section": "ECE-VI",
+        "semester": "6",
+        "roll": "78",
+        "university_roll": "2301010390",
+        "email": "niharika@gmail.com",
+        "phone": "8074308340",
+        "cgpa": "8.95",
+        "attendance": "94%",
+        "credits": "132",
+        "backlogs": "0",
+        "photo": "students/niharika.jpg"
+    },
+
+   
+
+}
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -9,21 +123,30 @@ def home():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    @app.route("/dashboard")
+def dashboard():
+    return render_template(
+        "dashboard.html",
+        student=students["phani@gmail.com"]
+    )
+
     if request.method == "POST":
+
         email = request.form["email"]
         password = request.form["password"]
 
-        if email == "phani@gmail.com" and password == "1234":
-            return redirect("/dashboard")
+        if email in students and students[email]["password"] == password:
+
+            return render_template(
+                "dashboard.html",
+                student=students[email]
+            )
+
         else:
             return "Invalid Email or Password"
 
     return render_template("login.html")
 
-
-@app.route("/dashboard")
-def dashboard():
-    return render_template("dashboard.html")
 
 
 @app.route("/timetable")

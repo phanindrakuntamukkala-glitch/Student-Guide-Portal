@@ -18,15 +18,14 @@
     <!-- Blue Header -->
     <div class="profile-header">
 
-        <img src="{{ url_for('static', filename='images/phani.jpg') }}" class="profile-img">
+        <img src="{{ url_for('static', filename='images/' + student.photo) }}" class="profile-img">
+<h3>{{ student.name }}</h3>
 
-        <h3>KUNTAMUKKALA PHANINDRA CHOWDARY</h3>
-
-        <h5>Artificial Intelligence & Machine Learning</h5>
+        <h5>{{ student.department }}</h5>
 
         <div class="contact">
-            <p>📧 phanindrakuntamala@gmail.com</p>
-            <p>📞 7569462957</p>
+           <p>📧 {{ student.email }}</p>
+<p>📞 {{ student.phone }}</p>
         </div>
 
     </div>
@@ -36,57 +35,57 @@
 
         <tr>
             <td><strong>Father Name</strong></td>
-            <td>Kuntamukkala Srinivasa Rao</td>
+            <td>{{ student.father }}</td>
         </tr>
 
         <tr>
             <td><strong>Mother Name</strong></td>
-            <td>Kuntamukkala Narmada</td>
+            <td>{{ student.mother }}</td>
         </tr>
 
         <tr>
             <td><strong>Date of Birth</strong></td>
-            <td>29/10/2005</td>
+            <td>{{ student.dob }}</td>
         </tr>
 
         <tr>
             <td><strong>Course</strong></td>
-            <td>B.Tech</td>
+            <td>{{ student.course }}</td>
         </tr>
 
         <tr>
             <td><strong>Department</strong></td>
-            <td>Artificial Intelligence & Machine Learning</td>
+<td>{{ student.department }}</td>
         </tr>
 
         <tr>
             <td><strong>Branch</strong></td>
-            <td>Computer Science & Engineering</td>
+            <td>{{ student.branch }}</td>
         </tr>
 
         <tr>
             <td><strong>Section</strong></td>
-            <td>CSE-VII</td>
+            <td>{{ student.section }}</td>
         </tr>
 
         <tr>
             <td><strong>Roll No</strong></td>
-            <td>74</td>
+            <td>{{ student.roll }}</td>
         </tr>
 
         <tr>
             <td><strong>Semester</strong></td>
-            <td>6</td>
+            <td>{{ student.semester }}</td>
         </tr>
 
         <tr>
             <td><strong>University Roll No</strong></td>
-            <td>2301010386</td>
+            <td>{{ student.university_roll }}</td>
         </tr>
 
         <tr>
             <td><strong>CGPA</strong></td>
-            <td>8.75</td>
+            <td>{{ student.cgpa }}</td>
         </tr>
 
     </table>
@@ -120,7 +119,7 @@
         <div class="card-icon">📊</div>
         <h3>Attendance</h3>
         <div class="circle">
-            <span>92%</span>
+            <span>{{ student.attendance }}</span>
         </div>
         <p>View Subject-wise Attendance</p>
     </div>
@@ -129,7 +128,7 @@
     <div class="info-card" onclick="window.location.href='/cgpa'">
         <div class="card-icon">📈</div>
         <h3>CGPA</h3>
-        <h1>8.75</h1>
+        <h1>{{ student.cgpa }}</h1>
         <p>View Academic Performance</p>
     </div>
 
@@ -137,7 +136,7 @@
     <div class="info-card">
         <div class="card-icon">📚</div>
         <h3>Backlogs</h3>
-        <h1>0</h1>
+        <h1>{{ student.backlogs }}</h1>
         <p>No Backlogs</p>
     </div>
 
@@ -145,7 +144,7 @@
     <div class="info-card">
         <div class="card-icon">🎓</div>
         <h3>Credits</h3>
-        <h1>132</h1>
+        <h1>{{ student.credits }}</h1>
         <p>Completed</p>
     </div>
 
