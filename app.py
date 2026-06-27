@@ -1,6 +1,7 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, session
 
 app = Flask(__name__)
+app.secret_key = "student_portal_secret"
 students = {
 
     "phani@gmail.com": {
@@ -124,25 +125,22 @@ def home():
 @app.route("/login", methods=["GET", "POST"])
 def login():
 
-    if request.method == "POST":
-
-        email = request.form["email"].strip().lower()
-        password = request.form["password"]
-
-        print("Email:", email)
-        print("Students:", students.keys())
-
-        if email in students and students[email]["password"] == password:
-            return render_template(
-                "dashboard.html",
-                student=students[email]
-            )
-        else:
-            return "Invalid Email or Password"
+   if email in students and students[email]["password"] == password:
+    session["user"] = email
+    return redirect("/dashboard")
+else:
+    return "Invalid Email or Password"
 
     return render_template("login.html")
 
 
+@app.route("/dashboard")
+def dashboard():
+    if "user" not in session:
+        return redirect("/login")
+
+    student = students[session["user"]]
+    return render_template("dashboard.html", student=student)
 
 @app.route("/timetable")
 def timetable():
@@ -227,3 +225,4 @@ if __name__ == "__main__":
         port=int(os.environ.get("PORT", 5000)),
         debug=True
     )
+  
