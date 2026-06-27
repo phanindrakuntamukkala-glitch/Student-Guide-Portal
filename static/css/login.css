@@ -74,11 +74,11 @@ body{
 }
 
 .logo{
-
-    width:90px;
-
+    width:120px;
+    height:120px;
+    object-fit:contain;
     margin-bottom:15px;
-
+    border-radius:12px;      /* Remove this if you don't want rounded corners */
 }
 
 .header h2{
