@@ -125,11 +125,16 @@ def home():
 @app.route("/login", methods=["GET", "POST"])
 def login():
 
-   if email in students and students[email]["password"] == password:
-    session["user"] = email
-    return redirect("/dashboard")
-else:
-    return "Invalid Email or Password"
+    if request.method == "POST":
+
+        email = request.form["email"].strip().lower()
+        password = request.form["password"]
+
+        if email in students and students[email]["password"] == password:
+            session["user"] = email
+            return redirect("/dashboard")
+        else:
+            return "Invalid Email or Password"
 
     return render_template("login.html")
 
