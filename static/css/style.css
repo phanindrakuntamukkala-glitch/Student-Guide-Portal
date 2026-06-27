@@ -72,13 +72,11 @@
 }
 
 /* ================= TOP CARDS ================= */
-
 .top-cards{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
     gap:20px;
 }
-
 /* ================= INFO CARD ================= */
 
 .info-card{
@@ -1236,4 +1234,70 @@ footer{
 .profile-table td:first-child{
     font-weight:bold;
     background:#f8f9fa;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+.dashboard-container{
+    flex-direction:column;
+    padding:15px;
+}
+
+.profile-card{
+    width:100%;
+    margin-bottom:20px;
+}
+
+.main-content{
+    width:100%;
+}
+
+.top-cards{
+    grid-template-columns:1fr;
+}
+
+.info-card{
+    width:100%;
+}
+
+.search-container{
+    flex-direction:column;
+    gap:10px;
+}
+
+.search-box,
+.search-btn{
+    width:100%;
+}
+
+.search-btn{
+    height:50px;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.navbar{
+    flex-direction:column;
+    padding:15px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.profile-table{
+    font-size:14px;
+    overflow-x:auto;
+    display:block;
+}
+
 }
